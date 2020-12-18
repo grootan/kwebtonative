@@ -1,0 +1,6 @@
+
+?squid:S1148?"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+qsquid:S00116"TRename this field "_delegate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½‚®íÿÿÿÿÿ
+msquid:S00116"PRename this field "_gson" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ«´€şÿÿÿÿ
+psquid:S00116"XRename this field "_kwebtonative" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î²Â¹
+Fsquid:S1066R"/Merge this if statement with the enclosing one.(¤¼¢

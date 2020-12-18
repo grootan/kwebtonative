@@ -1,0 +1,16 @@
+PODS:
+  - KWebToNative (0.0.1)
+
+DEPENDENCIES:
+  - KWebToNative (from `../../../iOS`)
+
+EXTERNAL SOURCES:
+  KWebToNative:
+    :path: "../../../iOS"
+
+SPEC CHECKSUMS:
+  KWebToNative: d3577a9b569ac04cdefba6d1c8de329a770e4115
+
+PODFILE CHECKSUM: 9ab107d121dc732dca262ee5f07da7fa24741ad7
+
+COCOAPODS: 1.8.3

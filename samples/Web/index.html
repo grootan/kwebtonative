@@ -1,0 +1,63 @@
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+    	<!-- JQuery isn't needed for JockeyJS, just used in this example. --> 
+		<script type="text/javascript" src="jquery-1.9.1.js"></script>
+
+		<!-- Required includes. json2.js may not be required in specific instances. -->
+		<script type="text/javascript" src="KWebToNative.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+                
+                KWebToNative.on("chat",function(payload){
+                    var currentVal = $("#messageview").val();
+                    $("#messageview").val(currentVal + payload.msg); 
+                });
+
+                $("#send").on("click",function(){
+                    KWebToNative.send("chat",{
+                        "msg" :$("#message").val()});
+                });
+			});
+		</script>
+    
+        <style>
+        	body {
+        		background-color: #FFF;
+        	}
+        
+            button {
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            
+            button.show {
+            	width: 200px;
+            }
+            
+            button.hide {
+            	width: 80px;
+            }
+            
+            img {
+            	width: 100%;
+            }
+            
+            .gray {
+                color: #777;
+            }
+        </style>
+        
+    </head>
+<body>
+
+    <textarea id="messageview">
+    </textarea>
+    <input type="text" id="message" />
+    <button id="send">Send</button>
+</body>
+</html>
+
